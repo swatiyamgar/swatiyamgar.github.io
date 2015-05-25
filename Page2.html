@@ -1,0 +1,17 @@
+<html>
+<head>
+	<title> Page 2 </title>
+	<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+	<script>
+		 $(document).ready(function(){
+        		$(window).on("beforeunload", function(){
+          			return "Going to Page 1";
+        		});
+    		});
+	</script>
+</head>
+
+<body>
+	<h3> I am Page 2 </h3>
+</body>
+</html>
