@@ -4,11 +4,11 @@
 	<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 
 	<script>
-		$(document).ready(function($){
+		$(document).ready(function(){
 			$("[type=submit]").bind("click", function(){
 				name = $("#text_input").val();
-				$("#text_input_area").append("<br>"+name+"<br>");
-				event.preventDefault()
+				$("table1").append('<tr><td>'+ $('[type = text]').val() +'</td></tr>');
+				event.preventDefault();
 			});
 		});
 	</script>
@@ -16,6 +16,6 @@
 <body>
 	<input type="text" id="text_input">
 	<input type="submit">
-	<textarea id="text_input_area"> </textarea>
+	<table id="table1"> </table>
 </body>
 </html>
