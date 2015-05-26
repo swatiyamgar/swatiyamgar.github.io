@@ -4,11 +4,11 @@
 	<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 
 	<script>
-		$(document).ready(function(){
+		$(document).ready(function($){
 			$("[type=submit]").bind("click", function(){
 				name = $("#text_input").val();
-				$("#text_input_area").append("<br/>"+name+"<br/>");
-				event.preventDefault();
+				$("#text_input_area").append("<br>"+name+"<br>");
+				event.preventDefault()
 			});
 		});
 	</script>
