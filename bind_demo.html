@@ -1,0 +1,18 @@
+<html>
+<head>
+	<title> Bind Demo </title>
+	<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+
+	<script>
+		$("type=submit").bind("click", function(){
+			name = $("#text_input").val();
+			$("#text_input_area").append("<br/>"+name+"<br/>");
+		});
+	</script>
+</head>
+<body>
+	<input type="text" id="text_input"/>
+	<input type="submit"/>
+	<textarea id="text_input_area"> </textarea>
+</body>
+</html>
