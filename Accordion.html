@@ -1,0 +1,51 @@
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>lt demo</title>
+<style>
+
+{
+display: inline-block;
+}
+
+.class2{
+display: inline-block;
+}
+
+.class3{
+display: inline-block;
+}
+
+</style>
+
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>	
+<script type="text/javascript" src="scripts/jquery.js"></script>
+<script type="text/javascript" src="scripts/jquery-ui-accordion.js"></script>
+
+</head>
+
+<body>
+<div id="accordian">
+<div> <h4 class='class4'> Heading 1 </h4> <div id = 'id1', class='class1'> ^ </div> <p id="p1"> Swati Yamgar </p> </div>
+<div>	<h4 class='class2'> Heading 2 </h4> <div id = 'id2', class='class1'> ^ </div> </div> <p id="p2"> Kiran Yamgar </p>
+<div>	<h4 class='class3'> Heading 3 </h4> <div id = 'id3', class='class1'> ^ </div> </div> <p id="p3"> Rashmi Yamgar </p>
+</div>
+
+<script type="text/javascript">
+$("document").ready(function(){
+	$("p:not(:first)").hide();
+});
+
+$(".class1").click(function(){
+	$(".class1").next().slideToggle("fast");	
+
+});
+
+
+
+</script>
+
+</body>
+
+
+</html>
