@@ -37,8 +37,10 @@ $("document").ready(function(){
 });
 
 $(".class1").click(function(){
-	$(".class1").each.next().slideToggle("fast");	
-
+	jQuery.each($(".class1"), function(){
+  		alert(this);
+  		$("p").slideToggle("slow");
+ 	});
 });
 
 
